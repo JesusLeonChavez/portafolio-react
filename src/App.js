@@ -8,7 +8,7 @@ import Home from './components/home/Home';
 import Portfolio from './components/portfolio/Portfolio';
 import Pricing from './components/pricing/Pricing';
 import Resume from './components/resume/Resume';
-// import Services from "./components/services/Services.Jsx";
+import Services from "./components/services/Services";
 import SideBar from './components/sidebar/SideBar';
 import Testimonials from './components/testimonials/Testimonials';
 
@@ -19,7 +19,7 @@ const App = () => {
       <main className="main">
         <Home />
         <About />
-        {/* <Services /> */}
+        <Services />
         <Resume />
         <Portfolio />
         <Pricing />

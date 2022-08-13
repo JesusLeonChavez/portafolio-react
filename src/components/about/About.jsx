@@ -1,6 +1,7 @@
 import React from "react";
 import "./about.css";
 import Image from "../../assets/avatar-2.svg";
+import AboutBox from "./AboutBox";
 
 const About = () => {
   return (
@@ -17,29 +18,31 @@ const About = () => {
               salesforce developer, I'm from Lima, Peru. I have experience in
               development and analysis
             </p>
-            <a href="" className="btn">Download CV</a>
+            <a href="#download" className="btn">
+              Download CV
+            </a>
           </div>
 
           <div className="about__skills grid">
             <div className="skills__data">
               <div className="skills__titles">
                 <h3 className="skills__name">Development web</h3>
-                <span className="skills__number development">75%</span>
+                <span className="skills__number">75%</span>
               </div>
 
               <div className="skills__bar">
-                <span className="skills__percentage"></span>
+                <span className="skills__percentage development"></span>
               </div>
             </div>
 
             <div className="skills__data">
               <div className="skills__titles">
                 <h3 className="skills__name">Analysis</h3>
-                <span className="skills__number">70%s</span>
+                <span className="skills__number">70%</span>
               </div>
 
               <div className="skills__bar">
-                <span className="skills__percentage ui__desing"></span>
+                <span className="skills__percentage analysis"></span>
               </div>
             </div>
 
@@ -50,12 +53,14 @@ const About = () => {
               </div>
 
               <div className="skills__bar">
-                <span className="skills__percentage"></span>
+                <span className="skills__percentage salesforce"></span>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <AboutBox />
     </section>
   );
 };
